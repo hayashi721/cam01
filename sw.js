@@ -1,8 +1,5 @@
-var CACHE_NAME = 'pwasample';
-var urlsToCache = [
-    '/apps/pwa/',
-    '/apps/pwa/index.html'
-];
+var CACHE_NAME = 'pwa-camera-test-caches';
+var urlsToCache = ['/index.html', '/js/camera.js'];
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
@@ -23,3 +20,4 @@ self.addEventListener('fetch', function(event) {
             })
     );
 });
+
